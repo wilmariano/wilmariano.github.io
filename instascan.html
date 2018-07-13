@@ -18,9 +18,9 @@
 			Instascan.Camera.getCameras().then(Cameras =>
 			{
 				if(Cameras.lenght > 0){
-					scanner.start(Cameras[1]);
-        // self.activeCameraId = Cameras[0].id;
-        // self.scanner.start(Cameras[0]);					
+					//scanner.start(Cameras[0]);
+         self.activeCameraId = Cameras[1];
+         self.scanner.start(Cameras[1]);					
 				}else{
 					console.error("Não existe câmera no dispositivo!");
 				}
