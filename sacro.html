@@ -103,8 +103,9 @@ body {
     <body>
 <div id="mySidenav" class="sidenav">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  <a href="http://williansmarianos.000webhostapp.com/smart-e-book/m.index.html" target="_blank">Para Mobile</a>
-  <a href="http://williansmarianos.000webhostapp.com/smart-e-book/index.html" target="_blank">Para Desktop</a>
+  <a href="http://williansmarianos.000webhostapp.com/smart-e-book/m.index.html" target="_blank">Chatbot Mobile</a>
+  <a href="http://williansmarianos.000webhostapp.com/smart-e-book/index.html" target="_blank">Chatbot Desktop</a>
+  <a href="#" target="_blank">Imagens e Classificações gerais</a>  
 </div>      
       
       <div id="map"></div>
@@ -220,7 +221,7 @@ function closeNav() {
       "<span style='display:block;margin-bottom:5%;' class='espaco' style='font-size:110%;'><b>Título:</b> "+obj.vetor[i].titulo+
       "</span><span style='display:block;margin-bottom:5%;' class='espaco'><b>Descrição:</b> "+obj.vetor[i].sobre+
       "</span><span style='display:block;margin-bottom:5%;' class='data'><b>Data:</b> "+obj.vetor[i].data+
-      "</span><span style='font-size:30px;cursor:pointer' onclick='openNav()'>Chatbot</span>";
+      "</span><span style='cursor:pointer' onclick='openNav()'>Chatbot</span>";
       infowindow[i] = new google.maps.InfoWindow({
         content: contentString[i]
       });
